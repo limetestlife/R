@@ -1,7 +1,12 @@
-library(wordcloud)  
+library(RColorBrewer)
+library(wordcloud2)
 library(tm)  
 library(NLP)
 
-sms_corpus_train<-read.csv(file="sms_spam.csv",stringsAsFactors=F)  
-sms_corpus_train <- Corpus(VectorSource(sms_corpus_train$text))
-wordcloud(sms_corpus_train, min.freq=30, random.order=FALSE)  
+wordcloud2(demoFreq)
+wordcloud2(demoFreq, size = 0.8,shape='triangle-forward') 
+wordcloud2(demoFreq, size = 0.8, color = "random-light", backgroundColor = "grey")
+letterCloud(demoFreqC,word="JAVA",size = 2)  
+letterCloud(demoFreqC,word="挖",size = 2) 
+
+wordcloud2(demoFreq, size = 1, minRotation = -pi/2, maxRotation = -pi/2)
