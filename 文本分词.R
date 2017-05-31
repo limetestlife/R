@@ -1,5 +1,6 @@
 library("rJava")
 library("Rwordseg")
+library(wordcloud)
 #分词
 segmentCN("你好北京")
 segmentCN(c("你好北京","今天是个好天气"))
@@ -47,7 +48,7 @@ wordsNum <- table(unlist(words))
 wordsNum <- sort(wordsNum) #排序 
 wordsData <- data.frame(words =names(wordsNum), freq = wordsNum)
 
-library(wordcloud)
+
 
 weibo.top150 <- tail(wordsData,150) #取前150个词 
 
