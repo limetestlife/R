@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 sms_raw <- read.csv("E:/0-R与数据挖掘/Machine-Learning-with-R-datasets-master/sms_spam.csv",stringsAsFactors = FALSE)
 str(sms_raw)
 
@@ -44,3 +48,11 @@ sms_dict <- dictionary(findFreqTerms(sms_dtm_train,5))
 sms_raw <- read.csv("E:/0-R与数据挖掘/Machine-Learning-with-R-datasets-master/sms_spam.csv",sep = ",",quote="",stringsAsFactors = FALSE)
 str(sms_raw)
 
+<<<<<<< HEAD
+=======
+=======
+
+sms_raw <- read.csv("E:/0-R与数据挖掘/Machine-Learning-with-R-datasets-master/sms_spam.csv",sep = ",",quote="",stringsAsFactors = FALSE)
+str(sms_raw)
+>>>>>>> origin/master
+>>>>>>> origin/master
